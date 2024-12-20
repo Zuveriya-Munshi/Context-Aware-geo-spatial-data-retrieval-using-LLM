@@ -1,0 +1,256 @@
+/* ChatBotPage.module.css */
+
+.container {
+  display: flex;
+  height: 100vh; /* Full viewport height */
+}
+
+/* Layout flexbox to hold input and chat window */
+.layout {
+  display: flex;
+  flex: 1; /* Allow it to grow and fill the space */
+}
+.sidebarHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sidebarHeader svg {
+  margin-right: 10px;
+}
+/* Input section on the left */
+.inputSection {
+  width: 10%; /* Adjust this width as per your requirement */
+  padding: 20px;
+  background-color: #2b2828; /* Light background color */
+  color: #fff;
+  border-right: 1px solid #ddd;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: flex-start; /* Ensure items align at the top */
+  height: 100vh; /* Full height */
+}
+
+.inputSection label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.inputSection input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.inputSection button {
+  margin-right: 10px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  background-color: #684271;
+  margin: 10px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.inputSection button:hover {
+  background-color: #543261;
+}
+
+/* Chat window in the center */
+.main {
+  flex: 1; /* Make the chat window take the remaining space */
+  display: flex;
+  flex-direction: column;
+  background-color: #000; /* Ensure full background color for the chat */
+  height: 100vh; /* Full viewport height for chat window */
+}
+
+.chatWindow {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Make the chat window cover the full available height */
+}
+
+/* Chat window on the right */
+.main {
+  flex: 1; /* Make the chat window take the remaining space */
+  display: flex;
+  flex-direction: column;
+  background-color: #000; /* Ensure full background color for the chat */
+  height: 100vh; /* Full viewport height for chat window */
+}
+
+.chatWindow {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Make the chat window cover the full available height */
+}
+
+.chatHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #684271;
+  color: white;
+}
+
+.chatBody {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.chatMessage {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.chatAvatar {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.chatContent {
+  background-color: rgb(128, 96, 172);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.chatInputContainer {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  width: 80%;
+  position: relative;
+}
+
+.chatInput {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.uploadButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  position: absolute;
+  left: 10px;
+}
+
+.uploadButton input[type="file"] {
+  display: none;
+}
+
+.sendButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  position: absolute;
+  right: 20px;
+}
+
+.chatFooter {
+  padding: 10px;
+  text-align: center;
+  background-color: #b9a2a27e;
+}
+
+.chatButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  cursor: pointer;
+}
+
+.chatButton span {
+  font-size: 20px;
+  color: #684271;
+}
+
+.chatWindow {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.chatBody {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+  background-color: #000;
+}
+
+.chatMessage {
+  display: flex;
+  margin: 10px 0;
+  max-width: 60%;
+}
+
+.userMessage {
+  align-self: flex-start;
+  flex-direction: row-reverse;
+  text-align: left;
+}
+
+.botMessage {
+  align-self: flex-end;
+  text-align: justify;
+}
+
+.chatAvatar {
+  margin: 0 10px;
+}
+
+.chatContent {
+  background-color: rgb(128, 96, 172);
+  color: #d4d6d6;
+  padding: 10px;
+  border-radius: 10px;
+  word-wrap: break-word;
+}
+
+.userMessage .chatContent {
+  background-color: rgb(73, 49, 106);
+  color: #ddd;
+}
+
+/* .chatInputContainer {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #ddd;
+} */
+
+/* .chatInput {
+  flex: 1;
+  padding: 15px;
+  border-radius: 5px;
+} */
+/* 
+.sendButton {
+  margin-left: 10px;
+  background-color: #684271;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+} */
+
+/* .sendButton:hover {
+  background-color: #0056b3;
+} */
